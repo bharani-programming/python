@@ -3,7 +3,7 @@ Enter "help" below or click "Help" above for more information.
 >>> #arthematic operators
 >>> a=9
 >>> b=8
->>> print(a+b)
+>>> print(a+b)D
 17
 >>> a=65
 >>> b=76
