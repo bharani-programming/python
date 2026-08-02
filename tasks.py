@@ -182,7 +182,7 @@ elif price==200:
 '''student = int(input("Enter marks: "))
 for student in range(91, 101):
     print("Grade-A")'''
-#ATM APPLICATION
+'''#ATM APPLICATION
 while True:
     account=100000
     card="c"
@@ -211,9 +211,175 @@ while True:
             print("incorrect password")
             
     else:
-        print("invalid card")
+        print("invalid card")'''
+#attendance report
+'''n=int(input("enter the total no.of student"))
+countp=0
+counta=0
+for i in range(1,n+1):
+   s=input("student {} present or absent:".format(i)).lower()
+   if s=="p":
+       countp=countp+1
+   elif s=="a":
+       counta=counta+1
+print("................ATTENDENCE REPORTS...............")
+print("total student",n)
+print("total presenties",countp)
+print("total absenties",counta)'''
 
-     
+#BMI calculator
+'''while True:
+   w=float(input("enter a weight"))
+   h=float(input("enter a height"))
+   c=w/(h)**2        
+   if c<=18.5:
+      print("under weight")
+   elif c>18.5 and c<=24.5:
+      print("healthy weight")
+   elif c>24.5 and c<=29.5:
+      print("over weight")
+   elif c>30:
+      print("obesity")'''
+#patterns
+#right angle
+'''n=6
+for i in range(1,n+1):
+   print(" * "*i)'''
+#reversed angle
+'''n=5
+for i in range(n,0,-1):
+   print(" * "*i)'''
+
+'''n=6
+for i in range(n):
+   print("*"*(n-i))'''
+'''n=5
+#square
+for i in range(n):
+   for j in range(n):
+      print(" * ",end="")
+   print()'''
+
+'''n=4
+for i in range(1,n+1):
+   print(" "*(n-i)+" * "*i)'''
+
+def split_bill():
+    amount = int(input("Enter total bill amount: "))
+    persons = int(input("Enter number of persons: "))
+
+    if persons > 0:
+        each = amount / persons
+        print("Each person should pay:", each)
+    else:
+        print("Number of persons must be greater than 0")
+
+split_bill()
+            
+'''def split_bill():
+    amount = int(input("Enter bill amount: "))
+    persons = int(input("Enter number of persons: "))
+
+    if persons <= 0:
+        print("Invalid number of persons")
+    else:
+        print("Each person pays:", amount / persons)
+
+def exit_program():
+    print("Thank You!")
+
+while True:
+    print("\n1. Split Bill")
+    print("2. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        split_bill()
+    elif choice == 2:
+        exit_program()
+        break
+    else:
+        print("Invalid Choice")'''
+'''#normal
+def split_bill():
+   a=int(input("enter how many people"))
+   b=int(input("enter a amount"))
+   print("per head bill",b//a)
+split_bill '''
+'''#format
+def split_bill():
+    a=int(input("enter how many people"))
+    b=int(input("enter a amount"))
+    print(f"per head bill{b//a}")
+    print("per head bill{}".format(b//a))
+split_bill'''
+#fstrings
+'''def split_bill():
+    a=int(input("enter how many people"))
+    b=int(input("enter a amount"))
+    c=b/a
+    print(f"per head bill{c}")
+    print("per head bill{}".format(c))
+split_bill'''
+   
+'''num = int(input("Enter a number (1-100): "))
+
+values = [100, 90, 50, 40, 10, 9, 5, 4, 1,]
+symbols = ["C", "XC", "L", "XL", "X", "IX", "V", "IV", "I",]
+
+roman = ""
+
+for i in range(len(values)):
+    while num >= values[i]:
+        roman += symbols[i]
+        num -= values[i]
+
+print("Roman Numeral:", roman)'''
+
+'''roman = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+
+for i in range(10):
+    print(i + 1, "=", roman[i])'''
+
+#railway ticket
+'''print("............. Railway Ticket .............")
+
+ticket=1000
+gender=input("Choose gender (male/female): ").lower()
+
+def male():
+    age=int(input("Enter Age: "))
+    if age > 60:
+        fare=ticket - (ticket * 30 / 100)
+    else:
+        fare=ticket
+    print("Ticket Fare =", fare)
+
+def female():
+    age=int(input("Enter Age: "))
+    if age > 60:
+        fare=ticket - (ticket * 50 / 100)
+    else:
+        fare=ticket - (ticket * 30 / 100)
+    print("Ticket Fare =", fare)
+
+if gender=="male":
+    male()
+elif gender=="female":
+    female()'''  
+   
+
+        
+
+
+
+
+
+
+       
+    
+    
             
         
         
